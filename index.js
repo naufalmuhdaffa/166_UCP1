@@ -33,3 +33,11 @@ app.post("/kandang",async (req,res) => {
     }
 });
 
+app.get('/kandang', async (req,res)  => {
+    try{
+        const kandang = await db.Kandang.findAll();
+        res.send(kandang);
+    } catch (err) {
+        res.send(err);
+    }
+});
