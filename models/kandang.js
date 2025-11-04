@@ -25,10 +25,6 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.INTEGER,
             allowNull: true
         }
-    }, {
-        tableName: 'kandang',
-        timeStamp: false,
-        freezeTableName: true
     });
     return Kandang;
 };
